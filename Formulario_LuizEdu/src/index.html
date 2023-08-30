@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulário de Contato</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://www.blwconstrutora.com.br/wp-content/uploads/2021/07/logo-blw-site-02.svg" alt="Logo">
+    </div>
+  </header>
+
+  <main>
+    <form id="contact-form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <label for="attachment">Anexo:</label>
+      <input type="file" id="attachment" name="attachment">
+      <br />
+      <br />
+      <button type="submit" for="modal-1">Enviar</button>
+    </form>
+  </main>
+
+  <input class="modal-state" id="modal-1" type="checkbox" />
+  <div class="modal">
+    <label class="modal__bg" for="modal-1"></label>
+    <div class="modal__inner">
+      <label class="modal__close" for="modal-1"></label>
+      <h2>Sucesso!</h2>
+      <p id="modal__content">Aliquam in sagittis nulla. Curabitur euismod diam eget
+        risus venenatis, sed dictum lectus bibendum. Nunc nunc nisi, hendrerit eget nisi id, rhoncus rutrum velit. Nunc
+        vel mauris dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Aliquam fringilla quis nisi eget imperdiet.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2023 Luiz Eduardo de Oliveira Martins</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

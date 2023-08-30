@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  web:
+    image: php:8.0-apache
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html
+      # - ./config/php.ini:/usr/local/etc/php/php.ini
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
